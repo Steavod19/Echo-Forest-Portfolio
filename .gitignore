@@ -1,8 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
+/dist/*
+dist/*
 /tmp
+.DS_Store
 
 # dependencies
 /node_modules
@@ -15,3 +17,5 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+firebase.json

@@ -1,0 +1,84 @@
+.index-style {
+  color: $font-white;
+
+  .index-background-image {
+    background:
+       /* top, transparent red, faked with gradient */
+       linear-gradient(
+         rgba(72, 128, 104, 0.35),
+         rgba(72, 128, 104, 0.15)
+       ), url('https://s3-us-west-2.amazonaws.com/port-blog/IMG_4773.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+  }
+
+  // .index-background-image:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   background-image: linear-gradient(to bottom,transparent,#FFF);
+  //   opacity: 1;
+  // }
+
+  .intro-message {
+      position: relative;
+      padding-top: 10%;
+      h1 {
+        margin: 0;
+        font-size: 5em;
+      }
+  }
+
+  .centered {
+  // background: url('https://s3-us-west-2.amazonaws.com/port-blog/echoforest-logo.gif');
+  position: fixed;
+  // z-index: 1;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+    img {
+      height: 800px;
+    }
+  }
+
+  .col-lg-12 {
+    text-align: center;
+  }
+
+
+  @media(max-width:767px) {
+      .intro-message {
+          padding-top: 15%;
+      }
+
+      .intro-message > h1 {
+          font-size: 3em;
+      }
+
+      ul.intro-social-buttons > li {
+          display: block;
+          margin-bottom: 20px;
+          padding: 0;
+      }
+
+      ul.intro-social-buttons > li:last-child {
+          margin-bottom: 0;
+      }
+
+      .intro-divider {
+          width: 100%;
+      }
+  }
+}

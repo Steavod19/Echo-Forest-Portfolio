@@ -1,6 +1,8 @@
-body {
-  color: blue;
-  p  {
-    color: red;
-  }
-}
+@import "fonts";
+@import "variables";
+@import "nav";
+@import "application";
+@import "index";
+
+// @import "blog";
+// @import "input";

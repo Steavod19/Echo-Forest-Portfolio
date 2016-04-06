@@ -28,13 +28,21 @@
 }
 
 i.mdi-add-circle-outline {
-  padding-top: 20px;
+  // padding-top: 20px;
   color: $icon-color;
   font-size: 48px;
+  height: 48px;
+  width: 48px;
 }
+
+nav li.menu-button {
+  padding-top: 25px;
+}
+
 .menu-button {
   cursor: pointer;
 }
+
 
 .main-menu {
   .menu-navigation {
@@ -63,11 +71,17 @@ i.mdi-add-circle-outline {
 
       ::before {
         visibility: hidden;
-        padding-right: 20px;
-        vertical-align: -19%;
-        content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_outline_white_36px.svg')
+        padding-right: 10px;
+        vertical-align: -28%;
+        content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_outline_white_36px.svg');
       }
-      :hover::before {
+      // ::after {
+      //   content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_outline_white_36px.svg');
+      //   visibility: hidden;
+      //   padding-left: 10px;
+      //   vertical-align: -19%;
+      //   }
+      :hover::before, :hover::after, {
         visibility: visible;
      }
       a.menu-link {

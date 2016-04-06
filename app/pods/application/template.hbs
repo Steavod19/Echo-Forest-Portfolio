@@ -30,7 +30,25 @@
 </nav>
 
 {{#if isDisplayMenu}}
-  <div id="menu-box" class="menu-navigation"></div>
+
+  <div class="main-menu">
+    <div id="menu-box" class="menu-navigation" {{action 'menuDisplay'}}>
+
+      <ul class="menu-ul">
+        <li class="menu-li">
+          {{#link-to "blog" class="menu-link"}}Portfolio{{/link-to}}
+        </li>
+        <li class="menu-li">
+          {{#link-to "post" class="menu-link"}}Post{{/link-to}}
+        </li>
+        <li class="menu-li">
+          {{#link-to "blog" class="menu-link"}}Message Board{{/link-to}}
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
 {{/if}}
 
 {{outlet}}

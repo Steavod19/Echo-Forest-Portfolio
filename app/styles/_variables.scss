@@ -1,9 +1,16 @@
-$nav-background-color:  transparent;
-$nav-border-color:      #FFFFFF;
-$nav-font-color:        #FFFFFF;
+$white:                     #FFFFFF;
+$black:                     #000000;
+$grey:                      #696969;
 
-$font-white:            #FFFFFF;
-$font-black:            #000000;
-$font-color:            #666666;
+$nav-background-color:      transparent;
+$nav-border-color:          $white;
+$nav-font-color:            $white;
+$menu-background-color:     $grey;
+$menu-background-opacity:   0.9;
+$menu-font-color:           $white;
 
-$icon-color:            #FFFFFF;
+$font-white:                $white;
+$font-black:                $black;
+$font-color:                $grey;
+
+$icon-color:                $white;

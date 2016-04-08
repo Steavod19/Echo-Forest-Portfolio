@@ -28,7 +28,6 @@
 }
 
 i.mdi-add-circle-outline {
-  // padding-top: 20px;
   color: $icon-color;
   font-size: 48px;
   height: 48px;
@@ -42,7 +41,6 @@ nav li.menu-button {
 .menu-button {
   cursor: pointer;
 }
-
 
 .main-menu {
   .menu-navigation {
@@ -68,19 +66,13 @@ nav li.menu-button {
     li.menu-li {
       margin: 20px 0px;
       padding: 10px 0px;
-
       ::before {
         visibility: hidden;
         padding-right: 10px;
         vertical-align: -28%;
         content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_outline_white_36px.svg');
       }
-      // ::after {
-      //   content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_outline_white_36px.svg');
-      //   visibility: hidden;
-      //   padding-left: 10px;
-      //   vertical-align: -19%;
-      //   }
+
       :hover::before, :hover::after, {
         visibility: visible;
      }
@@ -88,10 +80,16 @@ nav li.menu-button {
         color: $menu-font-color;
         word-wrap: break-word;
       }
+
       a:hover, a:focus {
         text-decoration: none;
       }
     }
+    .menu-link.ember-view.active::before {
+      visibility: visible;
+      padding-right: 10px;
+      vertical-align: -28%;
+      content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_white_36px.svg');
+    }
  }
-
 }

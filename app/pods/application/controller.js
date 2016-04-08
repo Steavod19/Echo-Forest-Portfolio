@@ -23,9 +23,9 @@ export default Ember.Controller.extend({
           }, 'linear');
         } else {
 
-          $(".mdi-add-circle-outline").css('-webkit-transform', 'rotate(45deg)');
-          $(".mdi-add-circle-outline").css('-moz-transform', 'rotate(45deg)');
-          $(".mdi-add-circle-outline").css('transform', 'rotate(45deg)');
+          $(".mdi-add-circle-outline").css('-webkit-transform', 'rotate(-225deg)');
+          $(".mdi-add-circle-outline").css('-moz-transform', 'rotate(-225deg)');
+          $(".mdi-add-circle-outline").css('transform', 'rotate(-225deg)');
 
           $(".mdi-add-circle-outline").animate({
             borderSpacing: 270

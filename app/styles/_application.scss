@@ -1,4 +1,9 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
 body {
+  background: $body-background-color;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding-top: 70px;

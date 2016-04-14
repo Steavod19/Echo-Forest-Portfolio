@@ -1,7 +1,8 @@
-# Port-blog
+# Echo Forest
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+EF is a portfolio that will eventually include other artists and developers friends. Curently under construction, but if you have any questions please contact me srogers.design@gmail.com.
+
+Built with Ember.JS and Bootstrap
 
 ## Prerequisites
 

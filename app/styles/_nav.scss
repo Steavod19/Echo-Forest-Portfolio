@@ -18,7 +18,11 @@
     font-size: 35px;
     &:hover {
       border-color: $nav-border-color;
-      background-color: $nav-background-color;
+      // background-color: $nav-border-color;
+      color: $grey;
+      background-color:rgba(255, 255, 255, 0.5);
+      -webkit-transition: background .5s;
+      // opacity: 0.5;
     }
     &:focus {
       border-color: $nav-border-color;

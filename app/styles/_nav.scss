@@ -18,7 +18,11 @@
     font-size: 35px;
     &:hover {
       border-color: $nav-border-color;
-      background-color: $nav-background-color;
+      // background-color: $nav-border-color;
+      color: $grey;
+      background-color:rgba(255, 255, 255, 0.5);
+      -webkit-transition: background .5s;
+      // opacity: 0.5;
     }
     &:focus {
       border-color: $nav-border-color;
@@ -27,22 +31,69 @@
   }
 }
 
-.mdi {
-  padding-top: 20px;
+i.mdi-add-circle-outline {
   color: $icon-color;
   font-size: 48px;
+  height: 48px;
+  width: 48px;
 }
 
-.menu-navigation {
-  position: fixed;
-  width: 30%;
-  height: 100%;
-  background-color: black;
-  z-index: 1;
-  right: 0;
-  top: 0;
+nav li.menu-button {
+  padding-top: 25px;
 }
 
 .menu-button {
   cursor: pointer;
+}
+
+.main-menu {
+  .menu-navigation {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    background-color: $menu-background-color;
+    opacity: $menu-background-opacity;
+    z-index: 1;
+    right: 0;
+    top: 0;
+  }
+
+  ul.menu-ul {
+    padding-left: 0px;
+    list-style: none;
+    position: fixed;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 20px;
+    color: $menu-font-color;
+    font-size: 25px;
+    li.menu-li {
+      margin: 20px 0px;
+      padding: 10px 0px;
+      ::before {
+        visibility: hidden;
+        padding-right: 10px;
+        vertical-align: -28%;
+        content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_outline_white_36px.svg');
+      }
+
+      :hover::before, :hover::after, {
+        visibility: visible;
+     }
+      a.menu-link {
+        color: $menu-font-color;
+        word-wrap: break-word;
+      }
+
+      a:hover, a:focus {
+        text-decoration: none;
+      }
+    }
+    .menu-link.ember-view.active::before {
+      visibility: visible;
+      padding-right: 10px;
+      vertical-align: -28%;
+      content: url('https://s3-us-west-2.amazonaws.com/port-blog/ic_label_white_36px.svg');
+    }
+ }
 }

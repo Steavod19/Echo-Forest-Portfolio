@@ -4,32 +4,18 @@
     <br>and internal corporate work I have done. Let me know if you want to discuss more!</p>
 </div>
 
+<div class="container">
+       <div class="row">
+           <div class="col-md-3">
+               <div class="list-group">
+                   {{#each portfolioList as |portfolio|}}
+                   <a href="#" class="list-group-item" {{action 'setPortfolio' portfolio}}>{{portfolio.value}}</a>
+                   {{/each}}
+               </div>
+           </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-md-2 sidebar">
-      <ul class="nav nav-sidebar">
-        <li><span class="side-nav-title">WEB DEV</span></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a class="sidebar-link" href="#">Fidelity</a></li>
-        <li><a class="sidebar-link" href="#">dliflc.edu</a></li>
-        <li><a class="sidebar-link" href="#">Launch</a></li>
-        <li><a class="sidebar-link" href="#">Wedding</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><span class="side-nav-title">Design</span></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a class="sidebar-link" href="#">Logos</a></li>
-        <li><a class="sidebar-link" href="#">Web</a></li>
-        <li><a class="sidebar-link" href="#">Tattoos</a></li>
-        <li><a class="sidebar-link" href="#">laksdjf</a></li>
-      </ul>
 
-    </div>
+           {{port-panel content=portItem}}
 
-        {{port-panel}}
-
-  </div>
-</div>
+       </div>
+   </div>

@@ -1,63 +1,24 @@
-// .grid figure img {
-// 	position: relative;
-// 	display: block;
-// 	height: 300px;
-// 	width: 100%;
-// 	opacity: 0.8;
-//   object-fit: cover;
-//   overflow: hidden;
-// }
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+.port-title {
+  color: $page-title;
+  text-align: center;
+}
+.port-sidenav {
+  margin-top: 70px;
 }
 
-.sidebar {
-  display: none;
-  background-color: transparent;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
+.port-image-container {
+    color: $white;
     background-color: $menu-background-color;
     opacity: $menu-background-opacity;
-    margin: 70px 0 40px 0;
-  }
-}
-
-.nav-sidebar {
-  // margin-right: -21px; /* 20px padding + 1px border */
-  // margin-bottom: 20px;
-  // margin-left: -20px;
-  // text-align: right;
-  span.side-nav-title{
-    font-size: 26px;
-  }
-  li {
-    a.sidebar-link {
-
+    img {
+      width: 100%;
+      overflow: hidden;
     }
-    a.sidebar-link:hover {
-      color: $port-menu-link;
+    .port-text-container {
+      padding: 10px 0 10px 20px;
+      a {
+        color: $black;
+      }
     }
-    a.sidebar-link:active, a.sidebar-link.active  {
-      color: $port-menu-link;
-      background-color: #eee;
-    }
-  }
 
-}
-.nav-sidebar > li > a, .side-nav-title {
-  padding-right: 20px;
-  padding-left: 20px;
-  color: $nav-font-color;
 }

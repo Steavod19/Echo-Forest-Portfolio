@@ -1,19 +1,15 @@
-<div class="title-container">
-  <h1>Portfolio</h1>
-  <p>These are just a few of the projects I have worked on. My public samples are limited due to military
-    <br>and internal corporate work I have done. Let me know if you want to discuss more!</p>
-</div>
 
 <div class="container">
        <div class="row">
            <div class="col-md-3">
+             <div class="port-sidenav">
                <div class="list-group">
                    {{#each portfolioList as |portfolio|}}
                    <a href="#" class="list-group-item" {{action 'setPortfolio' portfolio}}>{{portfolio.value}}</a>
                    {{/each}}
                </div>
            </div>
-
+         </div>
 
            {{port-panel content=portItem}}
 

@@ -1,11 +1,16 @@
 <div class="col-md-9">
+  <div class="port-title">
+    <h1>Portfolio</h1>
+    <p>These are just a few of the projects I have worked on. My public samples are limited due to military and internal corporate work I have done. Let me know if you want to discuss more!</p>
+  </div>
 
-    <div class="thumbnail">
-        <img class="img-responsive" src="{{content.url}}" alt="">
-        <div class="caption-full">
-            <h4><a href="">{{content.value}}</a></h4>
-            <p>{{content.description}}</p>
-        </div>
+
+  <div class="port-image-container">
+    <a href="{{content.siteLink}}" target="_blank"><img class="img-responsive" src="{{content.url}}" alt=""></a>
+    <div class="port-text-container">
+      <h4>{{content.value}}</h4>
+      <p>{{content.description}}</p>
     </div>
+  </div>
 
 </div>

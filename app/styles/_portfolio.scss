@@ -1,15 +1,37 @@
 .port-title {
   color: $page-title;
   text-align: center;
+  margin-top: 70px;
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
 }
 .port-sidenav {
-  margin-top: 70px;
+  margin-top: 30px;
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: $port-side-menu;
+    radius: none;
+    &:last-child {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    &.list-group-item:first-child {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+  }
 }
 
 .port-image-container {
     color: $white;
     background-color: $menu-background-color;
     opacity: $menu-background-opacity;
+    margin-top: 60px;
     img {
       width: 100%;
       overflow: hidden;

@@ -2,10 +2,6 @@
 <div class="container">
        <div class="row">
            <div class="col-md-3">
-             <div class="port-title">
-               <h1>Portfolio</h1>
-               <p>These are just a few of the projects I have worked on. My public samples are limited due to military and internal corporate work I have done. Let me know if you want to discuss more!</p>
-             </div>
              <div class="port-sidenav">
                <div class="list-group">
                    {{#each portfolioList as |portfolio|}}
@@ -15,7 +11,13 @@
            </div>
          </div>
 
-           {{port-panel content=portItem}}
+         <div class="col-md-9">
+           <div class="port-title">
+             <h1>Portfolio</h1>
+             <p>These are just a few of the projects I have worked on. My public samples are limited due to military and internal corporate work I have done. Let me know if you want to discuss more!</p>
+           </div>
 
+           {{port-panel content=portItem}}
+         </div>
        </div>
    </div>

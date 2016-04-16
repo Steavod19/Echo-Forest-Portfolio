@@ -1,0 +1,28 @@
+.about-style {
+  color: $font-white;
+
+  .about-background-image {
+    background:
+       linear-gradient(
+         rgba(72, 128, 104, 0.35),
+         rgba(72, 128, 104, 0.15)
+       ), url('https://s3-us-west-2.amazonaws.com/port-blog/IMG_4773.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+  }
+  .about-content {
+    background-color: $about-content-bg;
+    min-height: 100%;
+    width: 100%;
+    // width: 100%;
+    // position: fixed;
+  }
+}

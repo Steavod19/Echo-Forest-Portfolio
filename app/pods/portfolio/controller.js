@@ -31,7 +31,7 @@ export default Ember.Controller.extend({
     Ember.Object.create({
       value: 'PANGR',
       key: 3,
-      description: 'A group blogging site built in Rails. Pangr focuses on photo blogging Pangr allows you to create groups and post photos, gifs and posts to share with group followers. It utilizes Foundation front end with a mobile ready design Carrierwave with image scaling and Amazon S3 for back end storage.',
+      description: 'A group blogging site built in Rails. It utilizes a Foundation front end with a mobile ready design, Carrierwave with image scaling and Amazon S3 for back end storage.',
       url: 'https://s3-us-west-2.amazonaws.com/port-blog/pangr300.png',
       siteLink:'http://pangr.herokuapp.com/',
     }),

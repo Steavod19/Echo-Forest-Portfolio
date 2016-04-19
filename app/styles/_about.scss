@@ -1,6 +1,5 @@
 .about-style {
   color: $font-white;
-
   .about-background-image {
     background:
        linear-gradient(
@@ -19,10 +18,13 @@
     text-align: center;
   }
   .about-content {
-    background-color: $about-content-bg;
     min-height: 100%;
     width: 100%;
-    // width: 100%;
-    // position: fixed;
+  }
+
+  .about-frame {
+    background-color: $about-content-bg;
+    opacity: $about-background-opacity;
+    height: 300px;
   }
 }
